@@ -11,4 +11,4 @@ http://www.wsgwz.cn
 
 
 <a name="FAQ0"></a>
-[**(0) How do I use NetGuard?**](https://github.com/M66B/NetGuard/blob/master/FAQ.md#FAQ0)
+[**Fugue**](https://tieba.baidu.com/p/5221710387?red_tag=0240191186)
