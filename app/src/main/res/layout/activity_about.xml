@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<cn.wsgwz.tun.gravity.view.OverScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overScrollView"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+   >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.wsgwz.tun.gravity.view.FitStatusBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Toolbar>
+        <include layout="@layout/view_toolbar_divider"/>
+        <TextView
+            android:id="@+id/tv"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:autoLink="all"
+            android:textColor="@color/config_item_tv"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+
+    </LinearLayout>
+
+
+</cn.wsgwz.tun.gravity.view.OverScrollView>
+

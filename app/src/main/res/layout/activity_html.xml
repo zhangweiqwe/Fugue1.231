@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<cn.wsgwz.tun.gravity.view.OverScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overScrollView"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    >-->
+<LinearLayout
+
+    android:id="@+id/parent_LL"
+    android:background="@drawable/bg"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <cn.wsgwz.tun.gravity.view.FitStatusBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Toolbar>
+        <include layout="@layout/view_toolbar_divider"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/analysis_url"
+                android:hint="@string/please_input_analysis"
+                android:text="https://api.47ks.com/webcloud/?v="
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/video_url"
+                    android:hint="@string/please_input_video_url"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/ok"
+                    android:layout_weight="2"
+                    android:text="@string/begin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+    <EditText
+        android:id="@+id/confirm_video_url"
+        android:hint="@string/please_input_confirm_video_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/analysis_result"
+        android:hint="@string/analysis_result_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/url_result"
+                android:hint="@string/_null"
+                android:gravity="start"
+                android:background="@null"
+                android:textSize="@dimen/sp_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </HorizontalScrollView>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+<!--
+</cn.wsgwz.tun.gravity.view.OverScrollView>-->

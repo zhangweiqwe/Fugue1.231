@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="278dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="left"
+       >
+        <!-- <cn.wsgwz.tun.gravity.view.FitStatusBarView
+             android:layout_width="match_parent"
+             android:layout_height="0dp"/>-->
+
+
+     <include layout="@layout/nav_header_main"></include>
+
+  <!--  <cn.wsgwz.tun.gravity.view.OverScrollView
+        android:id="@+id/contentOverScrollView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+        <LinearLayout
+            android:background="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/dp_13"
+                android:paddingTop="@dimen/menu_main_hint_tv_padding_top"
+                android:text="@string/advanced"
+                android:textColor="@color/menu_main_hint_tv"
+                android:textSize="@dimen/menu_hint" />
+
+            <!--<TextView
+                android:id="@+id/capacity_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_main_click_tv_bg_selector"
+                android:clickable="true"
+                android:padding="@dimen/dp_13"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/start"
+                android:textColor="@color/menu_main_can_click_tv"
+                android:textSize="@dimen/menu_main_click_tv_text_size" />-->
+
+
+
+            <TextView
+                android:id="@+id/release"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_main_click_tv_bg_selector"
+                android:clickable="true"
+                android:padding="@dimen/dp_13"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/release"
+                android:textColor="@color/menu_main_can_click_tv"
+                android:textSize="@dimen/menu_main_click_tv_text_size" />
+
+
+            <CheckBox
+                android:id="@+id/capacity_state_ck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingTop="@dimen/dp_13"
+                android:paddingBottom="@dimen/dp_13"
+                android:text="@string/capacity_state"
+                android:textColor="@color/menu_main_can_click_tv"
+                android:textSize="@dimen/menu_main_click_tv_text_size" />
+
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_main_click_tv_bg_selector"
+                android:clickable="true"
+                android:padding="@dimen/dp_13"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/pass"
+                android:textColor="@color/menu_main_can_click_tv"
+                android:textSize="@dimen/menu_main_click_tv_text_size" />
+
+           <!-- <TextView
+                android:id="@+id/vip_video_analysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_main_click_tv_bg_selector"
+                android:clickable="true"
+                android:padding="@dimen/dp_13"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/vip_video_analysis"
+                android:textColor="@color/menu_main_can_click_tv"
+                android:textSize="@dimen/menu_main_click_tv_text_size" />-->
+
+            <include layout="@layout/menu_divider"></include>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/dp_13"
+                android:paddingTop="@dimen/menu_main_hint_tv_padding_top"
+                android:text="@string/beautify"
+                android:textColor="@color/menu_main_hint_tv"
+                android:textSize="@dimen/menu_hint" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_main_click_tv_bg_selector"
+                android:clickable="true"
+                android:padding="@dimen/dp_13"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/wallpaper"
+                android:textColor="@color/menu_main_can_click_tv"
+                android:textSize="@dimen/menu_main_click_tv_text_size" />
+
+
+            <include layout="@layout/menu_divider"></include>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/dp_13"
+                android:paddingTop="@dimen/menu_main_hint_tv_padding_top"
+                android:text="@string/other"
+                android:textColor="@color/menu_main_hint_tv"
+                android:textSize="@dimen/menu_hint" />
+            <TextView
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_main_click_tv_bg_selector"
+                android:clickable="true"
+                android:padding="@dimen/dp_13"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/update"
+                android:textColor="@color/menu_main_can_click_tv"
+                android:textSize="@dimen/menu_main_click_tv_text_size" />
+            <TextView
+                android:id="@+id/menu_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_main_click_tv_bg_selector"
+                android:clickable="true"
+                android:padding="@dimen/dp_13"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/menu_about"
+                android:textColor="@color/menu_main_can_click_tv"
+                android:textSize="@dimen/menu_main_click_tv_text_size" />
+
+
+
+
+        </LinearLayout>
+    <!--</cn.wsgwz.tun.gravity.view.OverScrollView>-->
+
+    </LinearLayout>

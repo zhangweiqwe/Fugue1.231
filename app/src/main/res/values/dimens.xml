@@ -1,0 +1,35 @@
+<resources>
+
+    <dimen name="ksw_md_thumb_ripple_size">42dp</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10dp</dimen>
+
+    <dimen name="ksw_md_thumb_solid_size">20dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_size">21dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_offset">2dp</dimen>
+
+
+
+    <dimen name="config_et">13sp</dimen>
+    <dimen name="config_et_conner">4dp</dimen>
+    <dimen name="menu_main_divider_height">1dp</dimen>
+    <dimen name="menu_main_hint_tv_padding_top">13dp</dimen>
+    <dimen name="menu_main_click_tv_text_size">13sp</dimen>
+    <dimen name="menu_">1dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+
+    <dimen name="menu_hint">12sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

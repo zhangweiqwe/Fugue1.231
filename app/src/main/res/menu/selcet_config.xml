@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.testmenu_xml.MainActivity" >
+
+        <item android:id="@+id/remote"
+            android:showAsAction="always"
+            android:title="@string/remote"/>
+        <item android:id="@+id/create"
+            android:showAsAction="always"
+            android:title="@string/create"/>
+
+
+
+
+
+</menu>

@@ -1,0 +1,71 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+   <!-- <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+
+            <gradient
+                android:centerColor="#1E6C6C"
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:endColor="#001E33"
+                android:gradientRadius="378dp"
+                android:startColor="#777F9466"
+                android:type="radial" />
+
+
+        </shape>
+    </item>-->
+
+
+    <!--<item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+
+            <gradient
+                android:centerColor="#1E6C6C"
+                android:centerX="0.8"
+                android:centerY="0.8"
+                android:endColor="#001E33"
+                android:gradientRadius="78dp"
+                android:startColor="#777F9466"
+                android:type="radial" />
+
+
+        </shape>
+    </item>-->
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+
+           <!-- <gradient
+                android:angle="90"
+                android:centerColor="#1E6C6C"
+                android:centerX="1"
+                android:endColor="#001E33"
+                android:startColor="#7F9466"
+                android:type="linear" />-->
+
+            <gradient
+                android:angle="90"
+                android:centerColor="#177373"
+                android:centerX="1"
+                android:endColor="#011d30"
+                android:startColor="#6d8057"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <item android:left="10dp" android:bottom="8dp">
+        <bitmap
+            android:src="@drawable/fugue"
+            android:gravity="bottom|left" />
+    </item>
+
+
+</layer-list>
+
+
+

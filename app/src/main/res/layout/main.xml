@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<cn.wsgwz.tun.gravity.view.MainSlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slidingPaneLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >-->
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.wsgwz.tun.gravity.view.FitStatusBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="6dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:background="@mipmap/icon" />
+
+            <!--<Switch
+                android:id="@+id/swEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/icon" />-->
+
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/icon"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="13dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <cn.wsgwz.tun.gravity.view.switchbutton.SwitchButton
+                    android:id="@+id/swEnabled"
+                    app:kswThumbColor="@color/config_item_tv"
+                    app:kswTintColor="#7F9466"
+                    android:checked="true"
+                    android:background="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_marginLeft="13dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/select"
+                android:textColor="#dddddd"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+       <include layout="@layout/view_toolbar_divider"></include>
+
+        <cn.wsgwz.tun.gravity.view.OverScrollView
+            android:id="@+id/overScrollView"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+    </cn.wsgwz.tun.gravity.view.OverScrollView>
+    </LinearLayout>
+
+
+
+    <include layout="@layout/menu"></include>
+<!--</cn.wsgwz.tun.gravity.view.MainSlidingPaneLayout>-->
+</android.support.v4.widget.DrawerLayout>
+
+

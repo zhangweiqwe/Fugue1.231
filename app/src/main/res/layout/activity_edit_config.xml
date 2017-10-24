@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<cn.wsgwz.tun.gravity.view.OverScrollView
+    android:id="@+id/overScrollView"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.wsgwz.tun.gravity.view.FitStatusBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Toolbar>
+
+        <include layout="@layout/view_toolbar_divider" />
+
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="68dp"
+            android:autoLink="all"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/text_is_null"
+            android:textColor="#808080" />
+
+
+
+
+
+    </LinearLayout>
+
+
+    </cn.wsgwz.tun.gravity.view.OverScrollView>

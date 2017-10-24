@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_p50">#7f000000</color>
+
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_ripple_checked">#33019285</color>
+
+    <color name="ksw_md_solid_shadow">#33000000</color>
+
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_checked">#019285</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+
+
+
+
+
+
+    <color name="config_bn_et">#aaffffff</color>
+
+    <color name="config_et_state_focused_true">#44000000</color>
+    <color name="config_et_state_focused_fase">#22000000</color>
+
+    <color name="config_current">#64e17295</color>
+
+    <color name="menu_main_bg">#3C3F41</color>
+    <color name="menu_main_hint_tv">#66BBBBBB</color>
+    <color name="menu_main_can_click_tv">#BBBBBB</color>
+    <color name="menu_main_divider">#66EbEbeb</color>
+    <color name="teal">#008083</color>
+    <color name="icon">#12BC8F</color>
+    <color name="main_bg">#3E89A9</color>
+    <color name="config_item_tv">#A5B4C3</color>
+
+    <color name="speedTv">#e3f4e803</color>
+
+
+
+
+
+
+</resources>

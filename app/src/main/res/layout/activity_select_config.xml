@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!-- SwipeBackLayout must contains only one direct child -->
+
+
+<cn.wsgwz.tun.gravity.view.OverScrollView
+    android:id="@+id/overScrollView"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.wsgwz.tun.gravity.view.FitStatusBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Toolbar>
+        <include layout="@layout/view_toolbar_divider"/>
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerView"
+            android:layout_marginBottom="68dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</cn.wsgwz.tun.gravity.view.OverScrollView>
+

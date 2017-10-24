@@ -1,0 +1,97 @@
+apply plugin: 'com.android.model.application'
+
+model {
+    android {
+        compileSdkVersion = 26
+        buildToolsVersion = "26.0.0"
+
+        defaultConfig {
+            applicationId = "cn.wsgwz.tun"
+        }
+
+
+        ndk {
+            //abiFilters.addAll(['armeabi', 'armeabi-v7a','mips','arm64-v8a','x86','x86_64'])
+            //abiFilters.addAll(['armeabi', 'armeabi-v7a', 'mips', 'x86'])
+            abiFilters.addAll(['armeabi-v7a'])
+            //abiFilters.addAll(['armeabi-v7a'])
+            platformVersion = "14"
+            moduleName = "sinktun"
+            toolchain = "clang"
+            ldLibs.add("log")
+        }
+
+
+        sources {
+            main {
+                jni {
+                    source {
+                        srcDirs.removeAll()
+                        srcDirs.add('src/main/jni/tun')
+                    }
+                    exportedHeaders {
+                    }
+                }
+            }
+        }
+
+        buildTypes {
+            release {
+                minifyEnabled = true
+                shrinkResources true
+                useProguard = true
+                proguardFiles.add(file('proguard-rules.pro'))
+                ndk.with {
+                    debuggable = false
+                }
+            }
+            debug {
+                minifyEnabled = true
+                useProguard = true
+                proguardFiles.add(file('proguard-rules.pro'))
+                ndk.with {
+                    debuggable = false
+                }
+            }
+        }
+        productFlavors {
+            create("all") {
+                versionName = "1.22"
+                minSdkVersion.apiLevel = 21
+                targetSdkVersion.apiLevel = 26
+                versionCode = 10000025
+                archivesBaseName = "fugue-v$versionName"
+            }
+            /* create("lollipop-and-later") {
+                versionName = "0.80"
+                minSdkVersion.apiLevel = 20
+                targetSdkVersion.apiLevel = 25
+                versionCode = 1
+                archivesBaseName = "fugue-v$versionName"
+            }
+            create("kitkat-and-earlier") {
+                versionName = "0.80"
+                minSdkVersion.apiLevel = 14
+                maxSdkVersion = 19
+                targetSdkVersion.apiLevel = 25
+                versionCode = 1
+                archivesBaseName = "fugue-v$versionName"
+            }*/
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:recyclerview-v7:26.+'
+    compile 'com.android.support:support-v4:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.+'
+}
+
+
+
+
+
+
+
+
