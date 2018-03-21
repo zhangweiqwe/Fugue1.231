@@ -1,0 +1,9 @@
+{
+"applicationId":"com.example.administrator.myapplication",
+"minSdkVersion":19,
+"targetSdkVersion":27,
+"versionCode":1,
+"versionName":"1.0",
+"forceUpdate":true,
+"descrption":"更新检查\\r\\n描述\\\r\\n描述二"
+}
