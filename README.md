@@ -18,4 +18,4 @@ http://www.wsgwz.cn
 <a></a>
 
 <a name="FAQ0"></a>
-[**About Fugue**](https://www.baidu.com/s?ie=UTF-8&wd=fugue%E5%85%8D%E6%B5%81)
+[**About Fugue**](http://www.eclipse.org/jetty/)
